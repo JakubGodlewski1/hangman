@@ -1,0 +1,181 @@
+.App{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.App{
+    font-size: 50px;
+}
+
+.inputs{
+    margin-top: 200px;
+}
+
+.input {
+    font-size: 50px;
+    border: 0;
+    border-bottom: 5px solid black;
+    width: 70px;
+    margin: 0 10px;
+    outline: none;
+    text-align: center;
+}
+
+.game-status{
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-style: italic;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.92);
+    z-index: 1;
+    gap: 30px;
+}
+
+.game-status button {
+    padding: 5px 20px;
+    font-size: 34px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.used-letters{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.used-letters span:after{
+    display: inline-block;
+    content: ",";
+}
+
+.used-letters span:first-child:after, .used-letters span:last-child:after{
+    display: inline-block;
+    content: "";
+}
+
+
+
+.hangman{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background: rgb(192, 192, 192);
+    border-radius: 10px;
+}
+
+.stick-1{
+    width: 100px;
+    height: 5px;
+    background: black;
+    left: 20px;
+    bottom: 20px;
+    position: absolute;
+}
+
+.stick-2{
+    position: absolute;
+    bottom: 20px;
+    left: 65px;
+    width: 5px;
+    height: 300px;
+    background: black;
+
+}
+
+.stick-3{
+    position: absolute;
+    bottom: 320px;
+    left: 65px;
+    width: 200px;
+    height: 5px;
+    background: black;
+
+}
+
+.stick-4{
+    position: absolute;
+    bottom: 255px;
+    left: 265px;
+    width: 5px;
+    height: 70px;
+    background: black;
+}
+
+.stick-5{
+    position: absolute;
+    bottom: 210px;
+    left: 243px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10000px;
+    background: transparent;
+    border: 5px solid black
+
+
+}
+
+.stick-6{
+    position: absolute;
+    bottom: 115px;
+    left: 265px;
+    width: 5px;
+    height: 100px;
+    background: black;
+}
+
+.stick-7{
+    position: absolute;
+    bottom: 175px;
+    left: 247px;
+    width: 5px;
+    height: 50px;
+    background: black;
+    transform: rotate(-45deg);
+}
+
+.stick-8{
+    position: absolute;
+    bottom: 173px;
+    left: 280px;
+    width: 5px;
+    height: 50px;
+    background: black;
+    transform: rotate(-135deg);
+}
+
+.stick-9{
+    position: absolute;
+    bottom: 75px;
+    left: 282px;
+    width: 5px;
+    height: 50px;
+    background: black;
+    transform: rotate(-45deg);
+}
+
+.stick-10{
+    position: absolute;
+    bottom: 75px;
+    left: 250px;
+    width: 5px;
+    height: 50px;
+    background: black;
+    transform: rotate(-135deg);
+}
+
